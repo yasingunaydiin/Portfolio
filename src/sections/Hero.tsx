@@ -1,9 +1,18 @@
+"use client"
 import memojiImage from '@/assets/images/memoji-computer.png';
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 import grainImage from "@/assets/images/grain.jpg";
 
 export const HeroSection = () => {
+
+  const scrollToProjects = () => {
+    const projectSection = document.getElementById('projectsSection');
+    if (projectSection) {
+      projectSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return <div className="py-28 ml-2 md:py-52 relative z-0 overflow-x-clip">
     <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
     <div
@@ -37,7 +46,8 @@ export const HeroSection = () => {
 </p>
 <div className="buttons flex flex-col md:flex-row md:mt-20 justify-center items-center mt-16 gap-3">
     <button
-    className="inline-flex items-center gap-2 border border-black/15 px-6 h-10 rounded-xl">
+    className="inline-flex items-center gap-2 border border-black/15 px-6 h-10 rounded-xl z-20"
+    onClick={scrollToProjects}>
       <span className="font-semibold">Explore My Work</span>
       <ArrowDown className="size-4" />
       </button>

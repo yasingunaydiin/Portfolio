@@ -5,6 +5,7 @@ import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import Image from "next/image";
 
+
 const portfolioProjects = [
   {
     year: "2024",
@@ -43,7 +44,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return <section className="pb-16 lg:py-28"> 
-    <div className="container">
+    <div id="projectsSection" className="container">
       <h2 className="text-3xl text-center md:text-5xl mt-6">Featured Projects</h2>
       <p className="text-base text-center md:text-2xl mt-3">Projects I have created to satisfy needs.</p>
       <div className="mt-5 md:mt-10 flex flex-col gap-14">
@@ -67,19 +68,22 @@ export const ProjectsSection = () => {
                 </li>
               ))}
             </ul>
-            <a href="{project.link}">
-            <button className="border border-black/15 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto md:px-8">
-              <span>Visit Live Site</span>
-              <ArrowUpRightIcon className="size-4" />
-              </button>
-            </a>
+            <a
+                    href={project.link} // Link is dynamically set from project data
+                    target="_blank" // Open in new tab
+                    rel="noopener noreferrer" // Security enhancement
+                    className="border border-black/15 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto md:px-8"
+                  >
+                    <span>Visit Live Site</span>
+                    <ArrowUpRightIcon className="size-4" />
+                  </a>
             </div>
             <div>
             <Image
                     src={project.image}
                     alt={project.title}
                     className={`mt-5 -mb-2 mx-auto md:-mb-5 lg:mt-0 lg:absolute ${
-                      index === 1 || index === 2 ? "lg:w-3/5 lg:h-auto lg:relative md:mb-5 mb-5" : "lg:h-full lg:w-auto"
+                      index === 1 || index === 2 ? "lg:w-3/5 lg:h-auto lg:relative md:mb-5 mb-5 md:w-3/5 md:h-auto" : "lg:h-full lg:w-auto"
                     }`} // First image full-size, second and third smaller
                   />
                 </div>
