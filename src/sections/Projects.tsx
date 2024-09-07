@@ -12,8 +12,8 @@ const portfolioProjects = [
     title: "Progression Dex",
     results: [
       { title: "Built a seamless progression tracker." },
-      { title: "Designed for easy navigation" },
-      { title: "Focused on feature enhancements" },
+      { title: "Designed for easy navigation." },
+      { title: "Focused on feature enhancements." },
     ],
     link: "https://www.progressiondex.com",
     image: progressionDexPage,
@@ -22,9 +22,9 @@ const portfolioProjects = [
     year: "2024",
     title: "Illumicheck",
     results: [
-      { title: "Built a seamless progression tracker." },
-      { title: "Designed for easy navigation" },
-      { title: "Focused on feature enhancements" },
+      { title: "Developed to provide spelling correction." },
+      { title: "Designed for easy use." },
+      { title: "With millions of words in the database." },
     ],
     link: "https://github.com/yasingunaydiin/Illumicheck", /* Change to its own landing page */
     image: illumicheckPage,
@@ -33,9 +33,9 @@ const portfolioProjects = [
     year: "2024",
     title: "Regexorcist",
     results: [
-      { title: "Built a seamless progression tracker." },
-      { title: "Designed for easy navigation" },
-      { title: "Focused on feature enhancements" },
+      { title: "Developed to remove regex from all file types." },
+      { title: "Designed for easy navigation." },
+      { title: "More features coming." },
     ],
     link: "https://github.com/yasingunaydiin/RegExorcist", /* Change to its own landing page */
     image: regexorcistPage,

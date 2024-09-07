@@ -13,6 +13,13 @@ export const HeroSection = () => {
     }
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contactSection');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return <div className="py-28 ml-2 md:py-52 relative z-0 overflow-x-clip">
     <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
     <div
@@ -51,7 +58,8 @@ export const HeroSection = () => {
       <span className="font-semibold">Explore My Work</span>
       <ArrowDown className="size-4" />
       </button>
-      <button className="inline-flex items-center gap-2 border border-black/15 px-6 h-10 rounded-xl">
+      <button className="inline-flex items-center gap-2 border border-black/15 px-6 h-10 rounded-xl z-20"
+      onClick={scrollToContact}>
         <span>👋🏻</span>
         <span className="font-semibold">Let's Connect</span>
       </button>
