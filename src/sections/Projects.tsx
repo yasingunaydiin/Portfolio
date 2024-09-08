@@ -26,7 +26,7 @@ const portfolioProjects = [
       { title: "Designed for easy use." },
       { title: "With millions of words in the database." },
     ],
-    link: "https://github.com/yasingunaydiin/Illumicheck", /* Change to its own landing page */
+    link: "https://illumicheck-landing-page.vercel.app/",
     image: illumicheckPage,
   },
   {
@@ -37,7 +37,7 @@ const portfolioProjects = [
       { title: "Designed for easy navigation." },
       { title: "More features coming." },
     ],
-    link: "https://github.com/yasingunaydiin/RegExorcist", /* Change to its own landing page */
+    link: "https://regexorcist-landing-page.vercel.app/",
     image: regexorcistPage,
   },
 ];
