@@ -9,7 +9,7 @@ import NextJSIcon from '@/assets/icons/NextJS_Badge.png';
 import TailwindIcon from '@/assets/icons/Tailwind_Badge.png';
 import PythonIcon from '@/assets/icons/Python_Badge.png';
 import SQLIcon from '@/assets/icons/SQL_Icon.png';
-import GitIcon from '@/assets/icons/github_logo.png';
+import GitIcon from '@/assets/icons/Git_Badge.png';
 import mapImage from "@/assets/images/map.png";
 import faceMemoji from "@/assets/images/memoji-face.png";
 import { CardHeader } from "@/components/CardHeader";
