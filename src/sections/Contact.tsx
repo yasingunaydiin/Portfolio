@@ -1,9 +1,9 @@
-"use client";
-import Image from "next/image";
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import LinkedInIcon from "@/assets/icons/linkedin_logo.png";
-import GitHubIcon from "@/assets/icons/github_logo.png";
-import ResumeIcon from "@/assets/icons/resume.png";
+'use client';
+import Image from 'next/image';
+import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
+import LinkedInIcon from '@/assets/icons/linkedin_logo.png';
+import GitHubIcon from '@/assets/icons/github_logo.png';
+import ResumeIcon from '@/assets/icons/resume.png';
 
 export const ContactSection = () => {
   return (
@@ -26,7 +26,7 @@ export const ContactSection = () => {
               <Image src={GitHubIcon} alt="GitHub Icon" width={32} />
             </a>
             <a
-              href="https://drive.google.com/file/d/1WbDiRjLhzKqudtlgt__sKkWS04zs6BZh/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Gy6bpGDF7aEtvtPeL8XlRSXvtmW9bfMK/view?usp=sharing"
               target="_blank"
             >
               <Image src={ResumeIcon} alt="GitHub Icon" width={32} />

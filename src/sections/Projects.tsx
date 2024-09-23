@@ -1,54 +1,54 @@
-import progressionDexPage from "@/assets/images/progressiondex-landing-page.png";
-import metaverseNextPage from "@/assets/images/metaverse-next-landing-page.png";
-import illumicheckPage from "@/assets/icons/Illumicheck_mac.png";
-import regexorcistPage from "@/assets/icons/RegExorcist_mac.png";
-import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import Image from "next/image";
+import progressionDexPage from '@/assets/images/progressiondex-landing-page.png';
+import metaverseNextPage from '@/assets/images/metaverse-next-landing-page.png';
+import illumicheckPage from '@/assets/icons/Illumicheck_mac.png';
+import regexorcistPage from '@/assets/icons/RegExorcist_mac.png';
+import CheckCircleIcon from '@/assets/icons/check-circle.svg';
+import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
+import Image from 'next/image';
 
 const portfolioProjects = [
   {
-    year: "2024",
-    title: "Progression Dex",
+    year: '2024',
+    title: 'Progression Dex',
     results: [
-      { title: "Built a seamless progression tracker." },
-      { title: "Designed for easy navigation." },
-      { title: "Focused on feature enhancements." },
+      { title: 'Built a seamless progression tracker.' },
+      { title: 'Designed for easy navigation.' },
+      { title: 'Focused on feature enhancements.' },
     ],
-    link: "https://www.progressiondex.com",
+    link: 'https://www.progressiondex.com',
     image: progressionDexPage,
   },
   {
-    year: "2024",
-    title: "Metaverse Next",
+    year: '2024',
+    title: 'Metaverse Next',
     results: [
-      { title: "Built a responsive landing page." },
-      { title: "Designed with the user in mind." },
-      { title: "Focused on features." },
+      { title: 'Built a responsive landing page.' },
+      { title: 'Designed with the user in mind.' },
+      { title: 'Focused on features.' },
     ],
-    link: "https://metaverse-next-landing-page.vercel.app/",
+    link: 'https://metaverse-next-landing-page.vercel.app/',
     image: metaverseNextPage,
   },
   {
-    year: "2024",
-    title: "Illumicheck",
+    year: '2024',
+    title: 'Illumicheck',
     results: [
-      { title: "Developed to provide spelling correction." },
-      { title: "Designed for easy use." },
-      { title: "With millions of words in the database." },
+      { title: 'Developed to provide spelling correction.' },
+      { title: 'Designed for easy use.' },
+      { title: 'With millions of words in the database.' },
     ],
-    link: "https://illumicheck-landing-page.vercel.app/",
+    link: 'https://illumicheck-landing-page.vercel.app/',
     image: illumicheckPage,
   },
   {
-    year: "2024",
-    title: "Regexorcist",
+    year: '2024',
+    title: 'Regexorcist',
     results: [
-      { title: "Developed to remove regex from all file types." },
-      { title: "Designed for easy navigation." },
-      { title: "More features coming." },
+      { title: 'Developed to remove regex from all file types.' },
+      { title: 'Designed for easy navigation.' },
+      { title: 'More features coming.' },
     ],
-    link: "https://regexorcist-landing-page.vercel.app/",
+    link: 'https://regexorcist-landing-page.vercel.app/',
     image: regexorcistPage,
   },
 ];
@@ -105,8 +105,8 @@ export const ProjectsSection = () => {
                     alt={project.title}
                     className={`mt-5 -mb-2 mx-auto md:-mb-5 lg:mt-0 lg:absolute ${
                       index === 2 || index === 3
-                        ? "lg:w-3/5 lg:h-auto lg:relative md:mb-5 mb-5 md:w-3/5 md:h-auto"
-                        : "lg:h-full lg:w-auto"
+                        ? 'lg:w-3/5 lg:h-auto lg:relative md:mb-5 mb-5 md:w-3/5 md:h-auto'
+                        : 'lg:h-full lg:w-auto'
                     }`} // index === 2, means illumicheck image, index === 3 means regex image
                   />
                 </div>
