@@ -1,10 +1,10 @@
-import illumicheckPage from '@/assets/icons/Illumicheck_mac.png';
-import regexorcistPage from '@/assets/icons/RegExorcist_mac.png';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import blackboardPage from '@/assets/images/actionslist-landing-page.png';
+import illumicheckPage from '@/assets/images/illumicheck-landing-page.png';
 import metaversenextPage from '@/assets/images/metaverse-next-landing-page.png';
 import progressiondexPage from '@/assets/images/progressiondex-landing-page.png';
+import regexorcistPage from '@/assets/images/regexorcist-landing-page.png';
 import yukilanlariPage from '@/assets/images/yukilanlari-landing-page.png';
 import Image from 'next/image';
 
@@ -137,11 +137,9 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className={`mt-5 -mb-2 mx-auto md:-mb-5 lg:mt-0 lg:absolute ${
-                      index === 4 || index === 5
-                        ? 'lg:w-3/5 lg:h-auto lg:relative md:mb-5 mb-5 md:w-3/5 md:h-auto'
+                    className={`mt-5 mx-auto lg:mt-0 lg:w-3/5 lg:h-auto lg:absolute md:mb-5 mb-5 md:w-3/5 md:h-auto'
                         : 'lg:h-full lg:w-auto'
-                    }`} // index === 4, means images 1 through 4,, index === 5 means the icons
+                    }`}
                   />
                 </div>
               </div>
