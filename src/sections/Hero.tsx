@@ -45,11 +45,11 @@ export const HeroSection = () => {
           </span>
         </div>
         <p className='text-4xl font-light text-center md:text-5xl'>
-          Hi, I’m a front-end developer who enjoys building and designing clean,
+          Hi, I’m a front-end developer who enjoys designing and building clean,
           user-friendly projects
           <span className='group relative inline-block'>
             <span className='opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out'>
-              and crafting Python scripts.
+              by using Javascript and various frameworks.
             </span>
           </span>
         </p>
