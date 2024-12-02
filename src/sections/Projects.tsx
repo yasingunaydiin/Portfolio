@@ -2,10 +2,10 @@ import illumicheckPage from '@/assets/icons/Illumicheck_mac.png';
 import regexorcistPage from '@/assets/icons/RegExorcist_mac.png';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
-import actionsListPage from '@/assets/images/actionslist-landing-page.png';
-import metaverseNextPage from '@/assets/images/metaverse-next-landing-page.png';
-import progressionDexPage from '@/assets/images/progressiondex-landing-page.png';
-import yukIlanlariPage from '@/assets/images/yukilanlari-landing-page.png';
+import blackboardPage from '@/assets/images/actionslist-landing-page.png';
+import metaversenextPage from '@/assets/images/metaverse-next-landing-page.png';
+import progressiondexPage from '@/assets/images/progressiondex-landing-page.png';
+import yukilanlariPage from '@/assets/images/yukilanlari-landing-page.png';
 import Image from 'next/image';
 
 const portfolioProjects = [
@@ -25,11 +25,11 @@ const portfolioProjects = [
       },
     ],
     link: 'https://www.yukilanlari.net',
-    image: yukIlanlariPage,
+    image: yukilanlariPage,
   },
   {
     year: '2024',
-    title: 'actionsList',
+    title: 'Blackboard',
     results: [
       {
         title:
@@ -38,8 +38,8 @@ const portfolioProjects = [
       { title: 'Validates data using Zod and manages state with SWR.' },
       { title: 'Stores tasks in a MongoDB database and local storage.' },
     ],
-    link: 'https://actionslist.vercel.app',
-    image: actionsListPage,
+    link: 'https://blackboardapp.vercel.app',
+    image: blackboardPage,
   },
   {
     year: '2024',
@@ -50,7 +50,7 @@ const portfolioProjects = [
       { title: 'Focused on feature enhancements.' },
     ],
     link: 'https://www.progressiondex.com',
-    image: progressionDexPage,
+    image: progressiondexPage,
   },
   {
     year: '2024',
@@ -61,7 +61,7 @@ const portfolioProjects = [
       { title: 'Focused on features.' },
     ],
     link: 'https://metaverse-next-landing-page.vercel.app/',
-    image: metaverseNextPage,
+    image: metaversenextPage,
   },
   {
     year: '2024',
