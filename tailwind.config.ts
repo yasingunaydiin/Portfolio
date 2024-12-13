@@ -1,25 +1,25 @@
 // tailwind.config.js
 
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/sections/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     screens: {
-      sm: "375px",
-      md: "768px",
-      lg: "1200px",
+      sm: '375px',
+      md: '768px',
+      lg: '1200px',
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
-        md: "2rem",
+        DEFAULT: '1rem',
+        md: '2rem',
       },
     },
     extend: {
@@ -36,6 +36,9 @@ const config: Config = {
       animation: {
         'move-left': 'move-left 30s linear infinite',
         'move-right': 'move-right 30s linear infinite',
+      },
+      fontSize: {
+        xxs: '0.625rem',
       },
     },
   },

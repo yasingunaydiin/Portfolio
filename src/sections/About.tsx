@@ -15,7 +15,6 @@ import { Card } from '@/components/Card';
 import { CardHeader } from '@/components/CardHeader';
 import { ToolboxItems } from '@/components/ToolboxItems';
 import Image from 'next/image';
-import { useRef } from 'react';
 
 const toolboxItems = [
   {
@@ -56,46 +55,21 @@ const toolboxItems = [
   },
 ];
 
-// const hobbies = [
-//   {
-//     title: 'Photo Editing',
-//     emoji: '📷',
-//     left: '5%',
-//     top: '5%',
-//   },
-//   {
-//     title: 'Video Editing',
-//     emoji: '📹',
-//     left: '45%',
-//     top: '55%',
-//   },
-//   {
-//     title: 'Gaming',
-//     emoji: '🎮',
-//     left: '10%',
-//     top: '35%',
-//   },
-//   {
-//     title: 'Traveling',
-//     emoji: '🚞',
-//     left: '50%',
-//     top: '30%',
-//   },
-//   {
-//     title: 'Running',
-//     emoji: '🏃',
-//     left: '5%',
-//     top: '65%',
-//   },
-// ];
-
 export const AboutSection = () => {
-  const constraintRef = useRef(null);
+  // const constraintRef = useRef(null);
   return (
     <div className='py-20'>
       <div className='container'>
         <h2 className='text-3xl text-center md:text-5xl'>A Little About Me</h2>
         <p className='text-base text-center md:text-2xl mt-3'>Who am I?</p>
+        <p className='text-sm text-center md:text-1xl mt-3'>
+          Born in Doetinchem, The Netherlands, I’m a front-end developer and
+          native Turkish-Dutch translator with a degree in English Translation
+          and Interpretation Studies. With a foot in both Turkey and The
+          Netherlands, I blend creativity and functionality to craft
+          user-friendly web experiences, bringing a unique multicultural
+          perspective to my work.
+        </p>
         <div className='mt-10 flex flex-col gap-6'>
           <Card className='h-[320px] p-0'>
             <CardHeader
@@ -116,6 +90,13 @@ export const AboutSection = () => {
           </Card>
 
           <div className='flex flex-col gap-8'>
+            <h2 className='text-3xl text-center md:text-5xl'>Where Am I?</h2>
+            <p className='text-sm text-center md:text-1xl'>
+              I’m connected to both Turkey and The Netherlands, where my roots
+              and experiences intersect. These two countries have shaped who I
+              am, influencing my work and worldview. The map below represents
+              the places that have played a key role in my journey.
+            </p>
             <Card className='h-[250px] p-0 relative col-span-2'>
               <Image
                 src={turkeyMapImage}
@@ -128,7 +109,7 @@ export const AboutSection = () => {
                 <Image
                   src={faceMemoji}
                   alt='Face Memoji'
-                  className='h-11 w-11 object-contain rounded-full'
+                  className='h-10 w-10 object-contain rounded-full'
                 />
               </div>
             </Card>
@@ -145,38 +126,10 @@ export const AboutSection = () => {
                 <Image
                   src={faceMemoji}
                   alt='Face Memoji'
-                  className='h-11 w-11 object-contain rounded-full'
+                  className='h-10 w-10 object-contain rounded-full'
                 />
               </div>
             </Card>
-
-            {/* <Card className="h-[320px] p-0 flex flex-col col-span-2 md:col-span-3">
-              <CardHeader
-                title="My Interests"
-                description="Explore my interests and hobbies beyond the code."
-                className="px-6 py-6"
-              />
-              <div
-                className="relative flex-1"
-                ref={constraintRef}
-              >
-                {hobbies.map((hobby) => (
-                  <motion.div
-                    key={hobby.title}
-                    className="inline-flex items-center gap-2 py-1.5 px-6 outline outline-2 outline-black/10 rounded-full absolute bg-white"
-                    style={{
-                      left: hobby.left,
-                      top: hobby.top,
-                    }}
-                    drag
-                    dragConstraints={constraintRef}
-                  >
-                    <span className="font-medium">{hobby.title}</span>
-                    <span>{hobby.emoji}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </Card> */}
           </div>
         </div>
       </div>
